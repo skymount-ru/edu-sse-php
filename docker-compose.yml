@@ -1,0 +1,9 @@
+version: "3.2"
+
+services:
+  app:
+    image: library/php:7.3-apache
+    volumes:
+    - ./app:/var/www/html
+    ports:
+    - 8000:80
